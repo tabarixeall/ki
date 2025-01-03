@@ -273,19 +273,7 @@
 </script>
 
 
-  <script>
-    const date = new Date(25);
-
-    const day = date.getDate();
-    const month = date.toLocaleString('en', { month: 'short' });
-    const year = date.getFullYear();
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-
-    const formattedDate = `${day} ${month} ${year} at ${hours}:${minutes}`;
-
-    document.getElementById('current-time').innerText = formattedDate;
-  </script>
+  
   <script>
     document.querySelectorAll('.open-modal').forEach(button => {
       button.addEventListener('click', () => {
