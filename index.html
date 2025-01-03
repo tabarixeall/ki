@@ -349,8 +349,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('web-address').textContent = `${params.username}.t.me`;
         document.getElementById('dd').textContent = `${params.username}.t.me`;
         document.getElementById('pr1').textContent = `${params.price}`;
-	document.getElementById('current-time').textContent = `${params.time}`;
-	document.getElementById('offer-date').textContent = `${params.time}`;
+	document.getElementById('current-time').innerText = `${params.time}`;
+	document.getElementById('offer-date').innerText = `${params.time}`;
 
       document.getElementById('pr2').textContent = `${params.price}`;
     }
