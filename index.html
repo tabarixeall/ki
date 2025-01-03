@@ -320,22 +320,45 @@
     </script>
 <script>
         // Function to get URL parameters
-        function getQueryParam(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
-        }
+        function getUrlParameters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const param = urlParams.get('param'); // Assuming the parameter is named 'param'
 
-        // Get the 'username' parameter from the URL
-        const username = getQueryParam('username') || 'default_username';
-        const price = getQueryParam('price') || 'default_price';
+    if (!param) {
+        console.error('No parameters found in the URL.');
+        return null;
+    }
 
-        // Update the content dynamically
-        document.getElementById('username').textContent = `@${username}`;
-        document.getElementById('usernames').textContent = `t.me/${username}`;
-        document.getElementById('web-address').textContent = `${username}.t.me`;
-        document.getElementById('dd').textContent = `${username}.t.me`;
-        document.getElementById('pr1').textContent = `${price}`;
-      document.getElementById('pr2').textContent = `${price}`;
+    // Split the parameter by the hyphen
+    const parts = param.split('-');
+
+    if (parts.length < 3) {
+        console.error('Invalid parameter format. Expected format: username-price-time');
+        return null;
+    }
+
+    const username = parts[0];
+    const price = parts[1];
+    const time = parts.slice(2).join('-'); // Rejoin the remaining parts for time
+
+    return { username, price, time };
+}
+
+// Example usage
+document.addEventListener('DOMContentLoaded', () => {
+    const params = getUrlParameters();
+
+    if (params) {
+        console.log('Username:', params.username);
+        console.log('Price:', params.price);
+        console.log('Time:', params.time);
+
+        // Assign the values to DOM elements or perform other actions as needed
+        document.getElementById('username').textContent = params.username;
+        document.getElementById('price').textContent = params.price;
+        document.getElementById('time').textContent = params.time;
+    }
+});
     </script>
 	<!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
