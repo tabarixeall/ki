@@ -339,7 +339,9 @@
 
     const username = parts[0];
     const price = parts[1];
-    const time = parts.slice(2).join('-'); // Rejoin the remaining parts for time
+    const currentDate = new Date();
+    const options = { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true };
+    const time = currentDate.toLocaleString('en-US', options).replace(',', ' at');
 
     return { username, price, time };
 }
@@ -354,9 +356,15 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Time:', params.time);
 
         // Assign the values to DOM elements or perform other actions as needed
-        document.getElementById('username').textContent = params.username;
-        document.getElementById('price').textContent = params.price;
-        document.getElementById('time').textContent = params.time;
+        document.getElementById('username').textContent = `@${params.username}`;
+        document.getElementById('usernames').textContent = `t.me/${params.username}`;
+        document.getElementById('web-address').textContent = `${params.username}.t.me`;
+        document.getElementById('dd').textContent = `${params.username}.t.me`;
+        document.getElementById('pr1').textContent = `${params.price}`;
+	document.getElementById('current-time').textContent = `${params.time}`;
+	document.getElementById('offer-date').textContent = `${params.time}`;
+
+      document.getElementById('pr2').textContent = `${params.price}`;
     }
 });
     </script>
